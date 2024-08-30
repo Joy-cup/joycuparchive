@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joycup2-round</title>
+    <style>
+        .title1{
+        height:30px;
+        text-align: center;
+     }
+     .titletext{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 30px;
+        background-color: #fff2ca;
+        color: #d3aa;
+        margin: 10px;
+        padding: 5px;
+        text-decoration: none;
+        border: 2px solid #f1b80f;
+     }
+     .picture{
+            width: 70%;
+            height: auto;
+            text-align: center;
+            display: block;
+            margin: 30px auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="title1">
+        <a class="titletext" href="#">HOME</a>
+        <a class="titletext" href="#">ABOUT</a>
+    </div>
+    <div>
+       <img src="教室.webp"> 
+    </div>
+</body>
+</div>
+</html>
