@@ -36,7 +36,14 @@
     <div class="anniu" >
         <a class="anniutext" href="#">2022</a>
         <a class="anniutext" href="joycup2-round.html">2023</a>
-        <a class="anniutext" href="#">2024</a>
+        <a class="anniutext" href="#"  onclick="showMessage()">2024</a>
    </div>
+    <script>
+        function showMessage() {
+            alert('还未开始喵');
+            // Prevent the link from following its href attribute
+            return false;
+        }
+    </script>
 </body>
 </html>
