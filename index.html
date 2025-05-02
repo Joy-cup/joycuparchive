@@ -1,127 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joycup</title>
+    <title>JOY CUP Archive</title>
     <style>
-        /* Container for the background image */
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-colour: black;
-            background-position: center;
-            filter: blur(8px); /* Blurs the background */
-            z-index: -1; /* Ensures it stays behind other content */
-        }
-
         body {
+            font-family: 'Times New Roman', serif;
+            background-color: black;
+            color: white;
+            text-align: center;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
         }
-
-        .title {
-            text-align: center;
-            z-index: 1;
-            position: relative;
+        h1 {
+            margin-top: 50px;
+            font-size: 2em;
         }
-
-        .anniu {
-            z-index: 1;
-            position: relative;
+        .year {
+            margin-top: 30px;
+            font-size: 1.5em;
         }
-
-        .anniutext {
-            margin: 50px;
+        a {
+            color: white;
             text-decoration: none;
-            color: brown;
-            font-size: 50px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            border: 2px solid pink;
-            border-radius: 15px;
-            padding: 5px;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-        .mobile-message {
-            display: none;
-            font-size: 60px;
-            color: orange;
-            margin-top: 20px;
-        }
-          @media (max-width: 768px) {
-            .background {
-                 position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-colour:black;
-            background-size: cover;
-            background-position: center;
-            filter: blur(8px); /* Blurs the background */
-            z-index: -1; /* Ensures it stays behind other content */
-            }
-
-               .title img {
-                display: none; /* Hide the title image */
-            }
-               .anniu {
-            margin: 60px;
-            text-align: center;
-            z-index: 1;
-        }
-
-        .anniutext {
-            margin: 50px;
-            text-decoration: none;
-            color: brown;
-            font-size: 50px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            border: 2px solid pink;
-            border-radius: 15px;
-            padding: 5px;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-              .mobile-message {
-                display: block; /* Show the additional message */
-                   font-family: Georgia, 'Times New Roman', Times, serif;
-                  text-align: center;
-                   margin-bottom: 10px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Background image container -->
-    <div class="background"></div>
-    <div class="mobile-message">
-        <p>joycup</p>
-        <p>archive</p>
-    </div>
-    <div class="title">
-         <img src="title.png">
-    </div>
-    <div class="anniu">
-        <a class="anniutext" href="#">2022</a>
-        <a class="anniutext" href="joycup2-round.html">2023</a>
-        <a class="anniutext" href="#" onclick="showMessage()">2024</a>
-    </div>
-    <script>
-        function showMessage() {
-            alert('还未开始喵');
-            // Prevent the link from following its href attribute
-            return false;
-        }
-    </script>
+    <h1>JOY CUP Archive</h1>
+    <div class="year">2022</div>
+    <div class="year"><a href="joycup2-round.html">2023</a></div>
+    <div class="year">2025</div>
 </body>
 </html>
