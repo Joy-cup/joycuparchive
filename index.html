@@ -66,31 +66,7 @@
             }
         }
 
-        /* 动态光束 */
-        .beam {
-            position: absolute;
-            top: -100%;
-            left: 50%;
-            width: 10px;
-            height: 100%;
-            background: linear-gradient(180deg, red, blue, green);
-            animation: beamAnimation 5s linear infinite;
-            z-index: 1;
-        }
-
-        @keyframes beamAnimation {
-            0% {
-                top: -100%;
-                opacity: 0.5;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                top: 100%;
-                opacity: 0.5;
-            }
-        }
+        /* 你可以根据需要增加更多的星星 */
     </style>
 </head>
 <body>
@@ -106,7 +82,6 @@
         <div class="star" style="top: 70%; left: 10%; width: 2px; height: 2px; animation-duration: 2.5s;"></div>
         <!-- 可以根据需要增加更多的星星 -->
     </div>
-    <div class="beam"></div>
     <h1>JOY CUP Archive</h1>
     <div class="year">2022</div>
     <div class="year"><a href="joycup2-round.html">2023</a></div>
