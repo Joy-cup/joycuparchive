@@ -35,31 +35,36 @@
             text-decoration: none;
         }
 
-        /* 动态光束背景 */
-        .background {
+        /* 单根动态光束 */
+        .beam {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(255, 0, 0, 0.3), rgba(0, 255, 255, 0.3), rgba(0, 0, 255, 0.3));
-            background-size: 100% 200%;
-            animation: moveBeam 5s linear infinite;
+            top: -100%; /* 初始位置在屏幕上方 */
+            left: 50%; /* 使光束居中 */
+            width: 10px; /* 光束宽度 */
+            height: 100%; /* 光束从顶部到底部 */
+            background: linear-gradient(180deg, red, blue, green);
+            animation: beamAnimation 5s linear infinite;
             z-index: 0;
         }
 
-        @keyframes moveBeam {
+        /* 光束的动画效果 */
+        @keyframes beamAnimation {
             0% {
-                background-position: 0% 0%;
+                top: -100%; /* 从上方开始 */
+                opacity: 0.5; /* 初始透明度 */
+            }
+            50% {
+                opacity: 1; /* 中途完全显示 */
             }
             100% {
-                background-position: 0% 100%;
+                top: 100%; /* 向下移动至底部 */
+                opacity: 0.5; /* 最终透明度 */
             }
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
+    <div class="beam"></div>
     <h1>JOY CUP Archive</h1>
     <div class="year">2022</div>
     <div class="year"><a href="joycup2-round.html">2023</a></div>
