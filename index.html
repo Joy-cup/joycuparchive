@@ -6,17 +6,41 @@
     <title>JOY CUP Archive</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
-            background-color: white; /* 背景设为白色 */
-            color: #00bfff; /* 字体设为亮蓝色 */
-            text-align: center;
-            margin: 0;
+            font-family: 'Times New Roman', '仿宋', serif; /* 英文使用 Times New Roman，中文使用仿宋 */
+            background-color: rgb(255, 241, 181);
+            color: #000000;
+            text-align: left;
+            margin:50px;
             padding: 0;
             position: relative;
         }
 
+        header {
+            background-color: rgb(187, 129, 129); 
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end; /* 将内容对齐到右侧 */
+            z-index: 100;
+        }
+
+        header a {
+            color: #000000;
+            margin-left: 40px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
         h1 {
-            margin-top: 50px;
+            margin-top: 80px; /* 留出空间避免和导航栏重叠 */
+            margin-left: 30px;
             font-size: 2em;
             position: relative;
             z-index: 1;
@@ -24,21 +48,27 @@
 
         .year {
             margin-top: 30px;
+            margin-left: 30px;
             font-size: 1.5em;
             position: relative;
             z-index: 1;
         }
-
-        a {
-            color: #00bfff; /* 链接也设为亮蓝色 */
+        .year a{
+            color: #000000;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>JOY CUP Archive</h1>
-    <div class="year">2022</div>
-    <div class="year"><a href="joycup2-round.html">2023</a></div>
-    <div class="year">2025</div>
+    <header>
+        <a href="#">最新活动</a>
+        <a href="#">关于</a>
+        <a href="#">存档</a>
+    </header>
+
+    <h1>Joycup archive</h1>
+    <div class="year">Joycup 2022:高中生与异时空校园</div>
+    <div class="year"><a href="joycup2-round.html">Joycup 2023:高中生与时间循环</a></div>
+    <div class="year">Joycup 2025:高中生与神父的旅程</div>
 </body>
 </html>
